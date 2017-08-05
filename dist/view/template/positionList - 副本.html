@@ -1,0 +1,11 @@
+<div class="position-list" job-list="list" >
+	<ul>
+		<!--点击不会触发ng-sref-->
+		<li ui-sref="position({id:item.id})" ng-repeat="item in jobList" class="item">
+			<img ng-src="{{item.imgSrc}}" alt="" class="logo f-l" />
+			<h3 class="title">{{item.name}}</h3>
+			<p ng-bind="item.companyName+ '['+ item.city+']'+ item.industry" class="text"></p>
+			<p ng-bind="item.time" class="text"></p>
+		</li>
+	</ul>
+</div>

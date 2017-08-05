@@ -1,0 +1,633 @@
+.head {
+  background-color: #00B1C0;
+  line-height: 1.06666667rem;
+  height: 1.06666667rem;
+}
+.head .text {
+  color: #fff;
+  font-size: 0.53333333rem;
+}
+.head .custom {
+  color: #fff;
+  background-color: #FF7F27;
+  padding: .2rem .3rem;
+  margin-right: .4rem;
+  margin-top: .1rem;
+}
+.head .back-btn {
+  width: 1.06666667rem;
+  height: 1.06666667rem;
+  left: 0;
+}
+.foot {
+  width: 100%;
+  line-height: 1.4rem;
+  border: 0px solid #ddd;
+  border-top-width: 1px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  background-color: #fff;
+}
+.foot ul {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  box-shadow: 5px 0 5px 3px #ddd;
+}
+.foot ul li {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  border: 0px solid #ddd;
+  border-left-width: 2px;
+}
+.foot ul li.select {
+  background-color: #dbf9f4;
+}
+.foot ul li span {
+  width: 100%;
+  color: #999;
+}
+.foot ul li span i {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  background: red;
+}
+.foot ul li span i.document {
+  background: url("../image/document.png") no-repeat;
+}
+.foot ul li span i.search {
+  background: url("../image/search.png") no-repeat;
+}
+.foot ul li span i.my {
+  background: url("../image/my.png") no-repeat;
+}
+.foot ul li:first-child {
+  border-left-width: 0;
+}
+.position-list .item {
+  border: 0px solid #ddd;
+  border-bottom-width: 1px;
+  background-color: #fff;
+  padding: .2rem;
+}
+.position-list .logo {
+  width: 1.73333333rem;
+  height: 1.73333333rem;
+  margin-right: .5em;
+  margin-top: .2em;
+}
+.position-list .title {
+  font-size: 0.53333333rem;
+}
+.position-list p {
+  margin-top: .2rem;
+  font-size: 0.37333333rem;
+}
+.position-info {
+  background-color: #fff;
+  padding: 1rem .2rem .4rem;
+  font-size: 0.53333333rem;
+}
+.position-info .star {
+  right: 1rem;
+  top: 1.2rem;
+}
+.position-info span {
+  margin-right: .4rem;
+  line-height: 1rem;
+}
+.position-info img.star {
+  right: 0.8rem;
+}
+.position-company {
+  margin-top: 2px;
+  background-color: #fff;
+  padding: .2rem;
+  height: 2.5rem;
+}
+.position-company img {
+  width: 2.5rem;
+  height: inherit;
+}
+.position-company p {
+  padding-left: 3rem;
+  font-size: 0.53333333rem;
+  line-height: 1.2rem;
+}
+.position-company .detail {
+  font-size: 0.42666667rem;
+}
+.position-intro {
+  margin-top: .3rem;
+  background-color: #fff;
+  padding: .1rem .2rem;
+  font-size: 0.53333333rem;
+}
+.position-intro h5 {
+  margin: .3rem 0;
+  font-size: 0.53333333rem;
+}
+.position-intro div {
+  border: 0px solid #ddd;
+  border-top-width: 1px;
+  font-size: 0.42666667rem;
+  padding: 5px;
+}
+.position-class {
+  font-size: 0.53333333rem;
+}
+.position-class .list-head {
+  margin-top: 2px;
+  padding: .1rem .2rem;
+  background-color: #fff;
+}
+.position-class .list-head h5 {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+.position-class .list-head .btn {
+  background-color: #75D2EB;
+  border-radius: 1em;
+  padding: 0.1em 1em;
+  font-size: 0.53333333rem;
+  line-height: 1.5;
+  margin: 0 .2em .2em;
+}
+.position-class .list-head .btn.active {
+  background-color: #00B1C0;
+}
+.position-class .list-body li {
+  margin-top: 2px;
+  padding: .3rem .4rem;
+  background-color: #fff;
+}
+.position-class .list-body li h6 {
+  font-size: .4rem;
+  margin-bottom: .2rem;
+}
+.position-class .list-body li span:nth-of-type(1) {
+  font-size: .4rem;
+}
+.position-class .list-body li span:nth-of-type(2) {
+  margin-top: -0.4rem;
+}
+.bottom-btn {
+  position: fixed;
+  height: 1.2rem;
+  width: 100%;
+  bottom: 0;
+  background-color: #00B1C0;
+  box-shadow: 5px 0 5px 0px #ddd;
+}
+.f-l {
+  float: left;
+}
+.f-r {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.p-r {
+  position: relative;
+}
+.p-a {
+  position: absolute;
+}
+.d-ib {
+  display: inline-block;
+}
+.d-i {
+  display: inline;
+}
+.d-b {
+  display: block;
+}
+.txt-l {
+  text-align: left;
+}
+.txt-c {
+  text-align: center;
+}
+.txt-r {
+  text-align: right;
+}
+.v-t {
+  vertical-align: top;
+}
+.v-b {
+  vertical-align: bottom;
+}
+.v-m {
+  vertical-align: middle;
+}
+.search-bar {
+  height: 1.06666667rem;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #00B1C0;
+}
+.search-bar button {
+  background: transparent;
+  color: #fff;
+  font-size: 0.42666667rem;
+}
+.search-bar button.search {
+  color: #8C8888;
+  padding-left: 1em;
+  background: url("../image/search.png") no-repeat;
+  background-position: 0 3px;
+  background-size: 1em;
+}
+.search-bar input {
+  border: 0 none;
+  height: 0.8rem;
+  padding: 0 1em;
+  margin-left: 1em;
+  border-radius: 1em;
+  background-color: #686867;
+  color: #fff;
+}
+.search-bar input:focus {
+  outline-width: 0;
+}
+.search-bar input::-webkit-input-placeholder {
+  color: #fff;
+}
+.search-bar input:-moz-placeholder {
+  color: #fff;
+}
+.search-bar input::-moz-placeholder {
+  color: #fff;
+}
+.search-bar input:-ms-input-placeholder {
+  color: #fff;
+}
+.search-content {
+  padding-top: 80px;
+}
+.tab {
+  margin-top: 40px;
+  height: 1.06666667rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: 0.42666667rem;
+  background-color: #f2f2f2;
+}
+.tab li {
+  width: 33.333333%;
+  line-height: 1.06666667rem;
+  border-bottom: 2px solid #f2f2f2;
+}
+.tab li.active {
+  border-bottom: 2px solid #64D4F2;
+}
+.sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.2);
+}
+.sheet .wrap {
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  bottom: 4px;
+  line-height: 1.06666667rem;
+  font-size: 0.53333333rem;
+}
+.sheet .wrap ul {
+  max-height: 50vh;
+  overflow: scroll;
+  border-radius: 5px 5px 0 0;
+}
+.sheet .wrap ul li {
+  border-bottom: 1px solid #ddd;
+  background-color: #EDEFF0;
+}
+.sheet .wrap ul li:last-child {
+  border-bottom-width: 0;
+}
+.sheet .wrap button,
+.sheet .wrap li {
+  width: 100%;
+  height: 1.06666667rem;
+  line-height: 1.06666667rem;
+  color: #1063e5;
+  font-size: 0.53333333rem;
+}
+.sheet .wrap button {
+  margin-top: 5px;
+  border-radius: 0 0 5px 5px;
+  background-color: #fff;
+}
+.login {
+  background: url("../image/background.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.login form {
+  width: 80vw;
+  margin-top: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.login form * {
+  color: #fff;
+}
+.login form .input-wrap {
+  height: 1.2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 2px;
+}
+.login form .input-wrap label {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: .5rem .2rem;
+}
+.login form .input-wrap label.lock {
+  background-image: url("../image/lock.png");
+}
+.login form .input-wrap label.account {
+  background-image: url("../image/account.png");
+}
+.login form input {
+  width: 80%;
+  height: 1.2rem;
+  background: transparent;
+  border: 0 none;
+  text-indent: 1em;
+  font-size: 0.42666667rem;
+}
+.login form input:focus {
+  outline: none;
+}
+.login form input::placeholder {
+  color: #f0f0f0;
+}
+.login form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.login form button {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  background: rgba(6, 174, 205, 0.2);
+  border: 1px solid #2791a5;
+  font-size: 0.48rem;
+  font-weight: bold;
+  letter-spacing: 1em;
+  text-indent: 1em;
+  color: #2791a5;
+}
+.login form button:nth-of-type(1) {
+  margin-top: 10vh;
+}
+.login form button:nth-of-type(2) {
+  margin-top: 3vh;
+}
+.login form button.cur-btn {
+  background: #06aecd;
+  color: #fff;
+}
+.register {
+  background: url("../image/background.png") no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.register form {
+  width: 80vw;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.register form * {
+  color: #fff;
+}
+.register form .msg-wrap {
+  margin-top: 5vh;
+}
+.register form .msg-wrap a {
+  line-height: 1.2rem;
+  font-size: 0.42666667rem;
+  color: #06aecd;
+}
+.register form .msg-wrap a.disabled {
+  color: #7F7F7F;
+}
+.register form .msg-wrap input {
+  width: 60%;
+}
+.register form .msg-wrap .input-wrap {
+  width: 60%;
+}
+.register form .input-wrap {
+  height: 1.2rem;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  margin-top: 2px;
+}
+.register form .input-wrap label {
+  width: 20%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-repeat: no-repeat;
+  background-position: .5rem .2rem;
+}
+.register form .input-wrap label.lock {
+  background-image: url("../image/lock.png");
+}
+.register form .input-wrap label.account {
+  background-image: url("../image/account.png");
+}
+.register form input {
+  width: 80%;
+  height: 1.2rem;
+  background: transparent;
+  border: 0 none;
+  text-indent: 1em;
+  font-size: 0.42666667rem;
+}
+.register form input:focus {
+  outline: none;
+}
+.register form input::placeholder {
+  color: #f0f0f0;
+}
+.register form input::-webkit-input-placeholder {
+  color: #fff;
+}
+.register form input.ng-invalid + span {
+  position: absolute;
+  color: red;
+  right: 0;
+  line-height: 1.2rem;
+  font-size: 0.37333333rem;
+}
+.register form input.ng-invalid + span * {
+  color: red;
+}
+.register form button {
+  width: 100%;
+  height: 1rem;
+  line-height: 1rem;
+  background: rgba(6, 174, 205, 0.2);
+  border: 1px solid #2791a5;
+  font-size: 0.48rem;
+  font-weight: bold;
+  letter-spacing: 1em;
+  text-indent: 1em;
+  color: #2791a5;
+}
+.register form button:nth-of-type(1) {
+  margin-top: 7vh;
+}
+.register form button:nth-of-type(2) {
+  margin-top: 3vh;
+}
+.register form button.cur-btn {
+  background: #06aecd;
+  color: #fff;
+}
+.me {
+  margin-top: 10vh;
+  font-size: 0.48rem;
+}
+.me img {
+  width: 10vh;
+  height: 10vh;
+}
+.me .name {
+  margin-top: 2vh;
+}
+.me .btns {
+  margin-top: 6vh;
+}
+.me .btns button {
+  color: #fff;
+  font-size: 0.53333333rem;
+  font-weight: bold;
+}
+.me .btns .defbtn {
+  width: 40%;
+  height: 15vh;
+  margin: 0 4%;
+  background-color: #00B1C0;
+  border-radius: 10px;
+}
+.me .loginBtn,
+.me .logoutBtn {
+  width: 90%;
+  margin: 5vh 5%;
+  line-height: 6vh;
+}
+.me .logoutBtn {
+  background: #f40;
+}
+.me .loginBtn {
+  background: #00B1C0;
+}
+.my-post {
+  padding-top: 40px!important;
+}
+.position-list .icon {
+  width: .8rem;
+  height: .8rem;
+  right: 2vw;
+  top: 2vh;
+  background-image: url("../image/star.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.position-list .icon.star {
+  background-image: url("../image/star-active.png");
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+  to {
+    transform: none;
+  }
+}
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+/*
+ *  应当将顶部栏与底部栏分别设置一个高度属性，方便调用 @headHeight:40px  @footerHeight:40px
+ * */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 0.58666667rem;
+  background-color: #f2f2f2;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: 0 none;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.c-w {
+  color: #fff;
+}
+.c-r {
+  color: #F21F27;
+}

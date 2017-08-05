@@ -1,0 +1,15 @@
+<div class="me txt-c">
+	<div ng-if="user.name">
+		<img ng-src="{{user.headImage}}" alt="用户头像" />
+	<p class="name" ng-bind="user.name"></p>
+	<div class="btns">
+		<button ui-sref="post" class="deliver defbtn">投递</button>
+		<button ui-sref="favorite" class="defbtn">收藏</button>
+		<button class="logoutBtn" ng-click="logout()">退出登录</button>
+	</div>
+	</div>
+	<div ng-hide="user.name">
+		<button class="loginBtn" ui-sref="login">去登录</button>
+	</div>
+</div>
+<div app-foot></div>

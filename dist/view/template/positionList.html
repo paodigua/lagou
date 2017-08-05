@@ -1,0 +1,13 @@
+<div class="position-list" >
+	<ul>
+		<!--点击不会触发ng-sref；            过滤器|会默认将item做为其第一个参数传入到filterByObj函数中-->
+		<li ui-sref="position({id:item.id})" ng-repeat="item in jobList|filterByObj:filterObj" class="item p-r">
+			<img ng-src="{{item.imageUrl}}" alt="" class="logo f-l" />
+			<h3 class="title">{{item.job}}</h3>
+			<p ng-bind="item.companyName+ '['+ item.cityName+']'+ item.industryName+' '+item.scaleName" class="text"></p>
+			<p class="text f-r c-r"><span ng-bind="item.salaryName"></span></p>
+			<p ng-bind="item.date" class="text"></p>
+			<span ng-if="isFavorite" ng-click="$event.stopPropagation();select(item);" class="{{item.select?'star':'' }} icon  d-b p-a"></span>
+		</li>
+	</ul>
+</div>

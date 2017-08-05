@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "description": "angularjs webapp",
+  "main": "gulpfile.js",
+  "authors": [
+    "digua <xm_hxiao@126.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "angularjs"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.5",
+    "requirejs": "^2.3.3",
+    "angular-cookies": "^1.6.5",
+    "angular-validation": "^1.4.4",
+    "angular-animate": "^1.6.5"
+  }
+}

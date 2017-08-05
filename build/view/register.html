@@ -1,0 +1,24 @@
+<div class="register">
+	<!--要让validatin脚本生效，name='form'必须加-->
+	<form action="" name="form" >
+		<div class="input-wrap p-r">
+			<label class="d-b f-l account" for="mobile"></label>
+			<!--validation='phone'　引入验证机制-->
+			<input ng-model="user.phone" validator="phone" class="d-b f-l " id="mobile" type="text" name="mobile" placeholder="输入手机号" />
+		</div>
+		<div class="input-wrap p-r">
+			<label class="d-b f-l  lock" for="password"></label>
+			<input ng-model="user.password" validator="password" class="d-b f-l " id="password" name="password"  type="password"  placeholder="输入密码" />
+		</div>
+		<div class="msg-wrap p-r">
+			<a class="d-b f-r {{isSend? 'disabled' :''}}" ng-click="send()" ng-bind="sms"></a>
+			<div class="input-wrap">
+				<input ng-model="user.code" validator="required"  class="d-b f-l" type="text"  placeholder="短信验证码" />
+			</div>
+			
+		</div>
+		<!--validation-submit="form" 表示要提交的表单（name)-->
+		<button validation-submit="form" ng-click="submit()"  class="d-b cur-btn">注册</button>
+		<button ui-sref="login"  class="d-b">登录</button>
+	</form>
+</div>
