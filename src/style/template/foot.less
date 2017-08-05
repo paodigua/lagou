@@ -1,0 +1,51 @@
+@import '../variable.less';
+
+.foot {
+    width: 100%;
+    line-height: 1.4rem;
+    .topBorder();
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 0;
+    .bg-c();
+    ul {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        box-shadow: 5px 0 5px 3px #ddd;
+        li {
+            display: flex;
+            flex: 1;
+            text-align: center;
+            .leftBorder(2px);
+            &.select {
+                background-color: @footButtonActive;
+            }
+            span {
+                width: 100%;
+                color: #999;
+                i {
+                    width: 1.2em;
+                    height: 1.2em;
+                    margin-right: 4px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    background: red;
+                }
+                i.document {
+                    background: url("../image/document.png") no-repeat;
+                }
+                i.search {
+                    background: url("../image/search.png") no-repeat;
+                }
+                i.my {
+                    background: url("../image/my.png") no-repeat;
+                }
+            }
+        }
+        li:first-child {
+            border-left-width: 0;
+        }
+    }
+}

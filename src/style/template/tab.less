@@ -1,0 +1,21 @@
+@import '../variable.less';
+
+.tab {
+    margin-top:40px;
+    .h(40);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    .fs(16);
+    .bg-c(@tabDefaultColor);
+    li {
+        width:33.333333%;
+        .lh(40);
+        border-bottom:2px solid @tabDefaultColor;
+        
+        &.active {
+            border-bottom:2px solid @tabActiveColor;
+        }
+    }
+}

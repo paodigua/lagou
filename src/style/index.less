@@ -1,0 +1,145 @@
+@import 'template/head.less';
+@import 'template/foot.less';
+@import 'template/positionList.less';
+@import 'template/positionInfo.less';
+@import 'template/positionCompany.less';
+@import 'template/positionIntro.less';
+@import 'template/positionClass.less';
+@import 'position.less';
+@import 'property.less';
+@import 'search.less';
+@import 'template/tab.less';
+@import 'template/sheet.less';
+
+@import 'login.less';
+
+@import 'register.less';
+
+@import 'me.less';
+
+@import 'post.less';
+
+@import "favorite.less";
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounceInLeft {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
+}
+/*
+ *  应当将顶部栏与底部栏分别设置一个高度属性，方便调用 @headHeight:40px  @footerHeight:40px
+ * */
+.fs(@px) {
+    font-size: unit(@px /37.5,rem);
+}
+.h(@px) {
+    height: unit(@px /37.5,rem);
+}
+
+
+.w(@px) {
+    width: unit(@px /37.5,rem);
+}
+.bg-c(@c:#fff) {
+    background-color:@c;
+}
+
+.lh(@px) {
+    line-height: unit(@px /37.5,rem);
+}
+
+.pt(@px) {
+    padding-top: unit(@px /37.5,rem);
+}
+.pb(@px) {
+    padding-bottom: unit(@px /37.5,rem);
+}
+.pl(@px) {
+    padding-left: unit(@px /37.5,rem);
+}
+.pr(@px) {
+    padding-right: unit(@px /37.5,rem);
+}
+
+.allBorder(@w:1px,@s:solid,@c:#ddd) {
+    border:@w @s @c;
+}
+
+.topBorder(@w:1px,@s:solid,@c:#ddd){
+    .allBorder(0px,@s,@c);
+    border-top-width:@w;
+}
+
+.leftBorder(@w:1px,@s:solid,@c:#ddd){
+    .allBorder(0px,@s,@c);
+    border-left-width:@w;
+}
+.rightBorder(@w:1px,@s:solid,@c:#ddd){
+    .allBorder(0px,@s,@c);
+    border-right-width:@w;
+}
+.bottomBorder(@w:1px,@s:solid,@c:#ddd){
+    .allBorder(0px,@s,@c);
+    border-bottom-width:@w;
+}
+
+html,body {
+    width:100%;
+    height:100%;
+    padding:0;
+    margin:0;
+    .fs(22);
+    .bg-c(@contentBgColor);
+}
+* {
+    margin:0;
+    padding:0;
+}
+
+button {
+    border:0 none;
+}
+
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.c-w {
+    color:#fff;
+}
+.c-r {
+    color:#F21F27;
+}
+

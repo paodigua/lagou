@@ -1,0 +1,46 @@
+@import '../variable.less';
+
+.sheet {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    background: @sheetColor;
+    .wrap {
+        position: absolute;
+        left: 8px;
+        right: 8px;
+        bottom: 4px;
+
+        .lh(40);
+        .fs(20);
+        ul {
+            max-height: 50vh;
+            overflow: scroll;
+            border-radius: 5px 5px 0 0;
+            li {
+                border-bottom: 1px solid #ddd;
+                .bg-c(@sheetListColor);
+                &:last-child {
+                    border-bottom-width: 0;
+                }
+            }
+        }
+        button,
+        li {
+            width: 100%;
+            .h(40);
+            .lh(40);
+            color: @sheetFontColor;
+
+            .fs(20);
+        }
+        button {
+            margin-top: 5px;
+            border-radius: 0 0 5px 5px;
+            .bg-c(@defaultColor);
+        }
+    }
+}
